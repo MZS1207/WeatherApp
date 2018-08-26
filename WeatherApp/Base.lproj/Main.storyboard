@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="si4-DL-e64">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="hc7-eu-4kB">
+            <objects>
+                <viewController id="8zn-Pl-sO9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P2c-Ai-DqU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="pc9-qS-0kK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="bph-eZ-dyL"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="mTK-Z7-tuS"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pc9-qS-0kK" secondAttribute="trailing" id="DHb-d3-DX9"/>
+                            <constraint firstItem="pc9-qS-0kK" firstAttribute="top" secondItem="Ckd-Fz-vOn" secondAttribute="top" id="mZB-Y0-RRa"/>
+                            <constraint firstItem="pc9-qS-0kK" firstAttribute="leading" secondItem="P2c-Ai-DqU" secondAttribute="leading" id="soc-xT-S7h"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ckd-Fz-vOn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="EK5-lh-iUs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RoT-qt-Wkp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="884" y="241.52923538230885"/>
+        </scene>
+        <!--Today-->
+        <scene sceneID="O1G-fD-gJV">
+            <objects>
+                <viewController title="Today" id="WqW-Ev-Ix1" customClass="Today" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3VV-JM-e0I">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="et2-xN-pfl">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="EwD-w5-Yrd"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ClearSkyDay" translatesAutoresizingMaskIntoConstraints="NO" id="2DQ-N3-Z12">
+                                <rect key="frame" x="110" y="48.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="daZ-q2-GsV"/>
+                                    <constraint firstAttribute="width" secondItem="2DQ-N3-Z12" secondAttribute="height" multiplier="1:1" id="drW-KK-onF"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="currentLocation" translatesAutoresizingMaskIntoConstraints="NO" id="lnS-KT-dgo">
+                                <rect key="frame" x="40" y="163.5" width="12" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lnS-KT-dgo" secondAttribute="height" multiplier="1:1" id="ZVa-PR-zZv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22C" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udG-Vl-fHc">
+                                <rect key="frame" x="142" y="191" width="37.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.18431372549019609" green="0.56862745098039214" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgL-yx-U1h">
+                                <rect key="frame" x="152" y="381" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Share"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prague, Czech Republic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aB-MG-K0q">
+                                <rect key="frame" x="57" y="158.5" width="206.5" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="L8c-D8-Yi6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2DQ-N3-Z12" firstAttribute="centerX" secondItem="EBc-XJ-1Nm" secondAttribute="centerX" id="Mbv-zL-qc7"/>
+                            <constraint firstItem="EBc-XJ-1Nm" firstAttribute="trailing" secondItem="et2-xN-pfl" secondAttribute="trailing" id="Q4j-X1-hHn"/>
+                            <constraint firstItem="2DQ-N3-Z12" firstAttribute="centerY" secondItem="EBc-XJ-1Nm" secondAttribute="centerY" multiplier="0.16" constant="62" id="a6C-BV-aIe"/>
+                            <constraint firstItem="et2-xN-pfl" firstAttribute="top" secondItem="EBc-XJ-1Nm" secondAttribute="top" id="e2V-Qd-Jrs"/>
+                            <constraint firstItem="0aB-MG-K0q" firstAttribute="centerX" secondItem="2DQ-N3-Z12" secondAttribute="centerX" id="eLD-nB-7cg"/>
+                            <constraint firstItem="et2-xN-pfl" firstAttribute="leading" secondItem="EBc-XJ-1Nm" secondAttribute="leading" id="g45-2p-Y4r"/>
+                            <constraint firstItem="0aB-MG-K0q" firstAttribute="leading" secondItem="lnS-KT-dgo" secondAttribute="trailing" constant="5" id="hzb-IB-Lyh"/>
+                            <constraint firstItem="udG-Vl-fHc" firstAttribute="centerX" secondItem="0aB-MG-K0q" secondAttribute="centerX" id="n0C-Ne-jfp"/>
+                            <constraint firstItem="lnS-KT-dgo" firstAttribute="centerY" secondItem="0aB-MG-K0q" secondAttribute="centerY" id="pst-FJ-XqC"/>
+                            <constraint firstItem="udG-Vl-fHc" firstAttribute="top" secondItem="0aB-MG-K0q" secondAttribute="bottom" constant="10" id="s6E-DY-UIJ"/>
+                            <constraint firstItem="lnS-KT-dgo" firstAttribute="height" secondItem="0aB-MG-K0q" secondAttribute="height" constant="-10" id="xE2-Ez-MGm"/>
+                            <constraint firstItem="0aB-MG-K0q" firstAttribute="top" secondItem="2DQ-N3-Z12" secondAttribute="bottom" constant="10" id="yLo-rh-46f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EBc-XJ-1Nm"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Today" id="OiB-cq-i6g"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wwd-4e-CXA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="883.125" y="-422.53521126760563"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="SBh-zQ-yon">
+            <objects>
+                <tabBarController id="si4-DL-e64" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hGX-tX-dF9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Hmw-ke-Rhf" kind="relationship" relationship="viewControllers" id="cNV-1K-lnT"/>
+                        <segue destination="dIB-Md-0ad" kind="relationship" relationship="viewControllers" id="3A7-ay-BRH"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D0t-88-ZSO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1007" y="-90"/>
+        </scene>
+        <!--Today-->
+        <scene sceneID="n0N-ST-6cm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hmw-ke-Rhf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Today" image="tabbarTodayInactive" selectedImage="tabbarTodayActive" id="B58-8j-8qG"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Es1-ne-s9m">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="WqW-Ev-Ix1" kind="relationship" relationship="rootViewController" id="eWa-uV-n4Z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PBd-5r-vBX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-55.200000000000003" y="-422.33883058470769"/>
+        </scene>
+        <!--Forecast-->
+        <scene sceneID="YNd-LU-G5v">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dIB-Md-0ad" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Forecast" image="tabbarForecatInactive" selectedImage="tabbarForecastActive" id="l2m-kg-D1J"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="arG-5L-vt8">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8zn-Pl-sO9" kind="relationship" relationship="rootViewController" id="xpu-Fs-WE5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WxJ-Nt-yCa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-55.200000000000003" y="241.52923538230885"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ClearSkyDay" width="60" height="60"/>
+        <image name="Line" width="320" height="2"/>
+        <image name="currentLocation" width="12" height="12"/>
+        <image name="tabbarForecastActive" width="25" height="25"/>
+        <image name="tabbarForecatInactive" width="25" height="25"/>
+        <image name="tabbarTodayActive" width="25" height="25"/>
+        <image name="tabbarTodayInactive" width="25" height="25"/>
+    </resources>
+</document>
